@@ -1,0 +1,13 @@
+.admin-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, .4fr)); 
+    grid-column: content-start / content-end;
+    padding: 5rem; 
+    grid-gap: 5rem;
+}
+
+.nav-action-button {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}

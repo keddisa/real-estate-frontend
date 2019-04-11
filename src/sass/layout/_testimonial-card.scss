@@ -1,0 +1,33 @@
+.testimonial-card {
+    background-color: $color-primary-dark-inverted-lighter;
+    color: $color-primary-dark;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+
+.testimonial-display-image {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.testimonial-title {
+    font-size: 2rem;
+    justify-self: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.testimonial-content {
+    margin-top: 3rem;
+    justify-self: center;
+    text-align: center;
+}
+   

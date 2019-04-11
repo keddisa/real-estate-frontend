@@ -1,0 +1,10 @@
+.property-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+    padding: 5rem 0;
+    // background-color: $color-primary-dark-inverted;
+    color: $color-primary-dark;
+    grid-column: content-start / content-end; 
+    
+}

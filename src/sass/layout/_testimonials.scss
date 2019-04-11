@@ -1,0 +1,27 @@
+.testimonial-list { 
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: $color-primary-dark-inverted-lighter;
+    padding: 3rem 5rem;
+    grid-column: content-start / content-end;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, .4fr));
+    grid-gap: 5rem;
+    padding: 3rem 2.5rem; 
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, .6fr));
+        grid-gap: 8rem;
+        padding: 3rem 8rem; 
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        grid-template-columns: 1fr;
+        grid-gap: 6rem;
+        padding: 3rem 4rem; 
+    }
+}

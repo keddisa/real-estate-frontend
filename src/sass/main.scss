@@ -1,0 +1,24 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/about";
+@import "layout/property-card";
+@import "layout/properties"; 
+@import "layout/property-detail"; 
+@import "layout/testimonials"; 
+@import "layout/testimonial-card";
+@import "layout/contact";
+@import "layout/footer";
+
+@import "layout/admin/admin-main";
+@import "layout/admin/admin-nav";
+@import "layout/admin/admin-header";
+@import "layout/admin/admin-properties";

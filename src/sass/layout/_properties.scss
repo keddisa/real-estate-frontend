@@ -1,0 +1,32 @@
+.properties-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+    padding: 5rem 0;
+    background-color: $color-primary-dark-inverted;
+    color: $color-primary-dark;
+    grid-column: content-start / content-end;
+    
+}
+
+
+
+.properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, .4fr));
+    grid-gap: 6rem;
+    grid-row-gap: 10rem;
+    padding: 3rem 6rem;
+    justify-content: center;  
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, .5fr));
+        padding: 3rem 8rem; 
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        grid-template-columns: 1fr;
+        grid-gap: 10rem;
+        padding: 3rem 10rem; 
+    }
+}

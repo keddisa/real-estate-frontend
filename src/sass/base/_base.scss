@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%; 
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 40%;
+    }
+}
+
+body {
+    font-family: $font-main-text;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-main-text;
+    padding: 3rem;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 0rem; 
+    }
+}
+
+.App {
+    display:grid;
+    grid-template-columns: [full-start] 1fr [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end] 1fr [full-end];
+    grid-template-rows: min-content 80vh repeat(10, min-content);
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end];
+        grid-template-rows: min-content 80vh repeat(10, min-content);
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-rows: min-content 90vh repeat(10, min-content);
+    }
+}
+
+.admin-main-content {
+    grid-column: content-start / content-end;
+}
+
+.title {
+    font-size: 4rem;
+    align-self: center;
+    justify-self: center;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+        font-size: 3rem; 
+    }
+}
+
+button:link,
+button:visited {
+    border: none;
+}
+
+.button-primary {
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &-light{
+        background-color: $color-primary-dark-inverted;
+        color: $color-primary-dark;
+
+        &:hover {
+            transform: translateY(-3px) scale(1.03);
+            filter: brightness(70%);
+            box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: .2);
+        }
+
+        &:active {
+            transform: translateY(-1px) scale(1.01);
+            box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: .2); 
+        }
+    }
+
+    &-dark{
+        background-color: $color-primary-dark;
+        color: $color-primary-dark-inverted;
+
+        &:hover {
+            background-color: $color-primary-medium;
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: .2);
+        }
+
+        &:active {
+            transform: translateY(-1px) scale(1.01);
+            box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: .2);
+        }
+    }
+
+
+
+}

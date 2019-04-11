@@ -1,0 +1,43 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: content-start / content-end;
+}
+
+
+.contact-title {
+    padding-top: 4rem;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(3, 4rem) 12rem min-content; 
+    grid-gap: 2rem;
+    padding: 6rem;
+}
+     
+
+
+.contact-form-button {
+    grid-column: 2;
+}
+
+.form-label {
+    margin-right: 3rem;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border: 1px solid $color-main-text;
+    font-family: inherit;
+    border-radius: 2px;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .1);
+        border-bottom: 3px solid $color-primary-dark;
+    }
+}

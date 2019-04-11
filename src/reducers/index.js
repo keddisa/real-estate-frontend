@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import properties from '../api/properties';
 
 const propertiesReducer = () => {
-    console.log(properties);
+    // console.log(properties);
     return [
         { title: 'Phenomenal location for a small family',
         address: '1234 High Steet, Winston Salem, NC 27103',
